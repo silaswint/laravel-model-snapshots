@@ -1,0 +1,26 @@
+{
+    "name": "silaswint/laravel-model-snapshots",
+    "require": {
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/support": "^10 || ^11",
+        "illuminate/mail": "^10 || ^11",
+        "illuminate/config": "^10 || ^11",
+        "laravel/framework": "^10 || ^11"
+    },
+    "autoload": {
+        "files": [
+            "src/app/helpers.php"
+        ],
+        "psr-4": {
+            "Silaswint\\LaravelModelSnapshots\\": "src/",
+            "Silaswint\\LaravelModelSnapshots\\App\\": "src/app"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Silaswint\\LaravelModelSnapshots\\App\\Providers\\LaravelModelSnapshotsProvider"
+            ]
+        }
+    }
+}
