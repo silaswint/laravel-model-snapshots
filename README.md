@@ -9,7 +9,7 @@ This package provides an easy way to save the state of models as serialized mode
 You can install the package via composer:
 
 ```bash
-ddev composer require silaswint/laravel-model-snapshots
+composer require silaswint/laravel-model-snapshots
 ```
 
 # Setup
@@ -19,7 +19,7 @@ ddev composer require silaswint/laravel-model-snapshots
 The following command will publish the migration file and run it automatically:
 
 ```bash
-ddev artisan model-snapshots:install
+artisan model-snapshots:install
 ```
 
 ## Model
