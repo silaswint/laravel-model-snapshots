@@ -71,7 +71,7 @@ use App\Models\Warehouse;
 
 $order = Order::find(1);
 
-snapshot(Order::find(1))
+snapshot($order)
     ->setRelations(['user', 'company', 'warehouses'])
     ->commit();
 ```
