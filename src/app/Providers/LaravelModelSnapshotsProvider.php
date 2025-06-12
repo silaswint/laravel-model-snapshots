@@ -25,7 +25,7 @@ class LaravelModelSnapshotsProvider extends PackageServiceProvider
     private function handleMigrations(Package $package): void
     {
         // Load migrations
-        $iterator = new DirectoryIterator(__DIR__.'/../database/migrations/');
+        $iterator = new DirectoryIterator(__DIR__.'/../../database/migrations/');
         $migrations = collect();
 
         foreach ($iterator as $route) {
